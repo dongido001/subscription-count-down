@@ -1,0 +1,25 @@
+<div>
+  <nav>
+    <a routerLink="/">Got to count-down</a>
+  </nav>
+  <div>
+    <div class="success-message" *ngIf="userAdded"> User Created Successfully! </div>
+    <form> 
+      <input 
+        type="text" 
+        class="from-input" 
+        placeholder="Email" 
+        [(ngModel)]="userData.email" 
+        name="email"
+      />
+      <input 
+        type="text" 
+        class="from-input" 
+        placeholder="Name" 
+        [(ngModel)]="userData.name" 
+        name="name"
+      />
+      <button class="from-submit" (click)="addUser()"> Submit </button>
+    </form>
+  </div>
+</div>

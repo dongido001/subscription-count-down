@@ -1,1 +1,65 @@
 /* You can add global styles to this file, and also import other style files */
+/* Application-wide Styles */
+h1 {
+    color: #369;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 200%;
+}
+h2, h3 {
+    color: #369;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+}
+body {
+    overflow: hidden;
+}
+body, input[type="text"], button {
+    color: #888;
+    font-family: Cambria, Georgia;
+}
+/* everywhere else */
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+}
+
+.content {
+    align-self: center;
+    justify-self: center;
+}
+
+.count-down {
+    text-align: center;
+    font-size: 300%;
+}
+
+.from-input {
+    display: block;
+    width: 300px;
+    margin: 8px;
+    padding: 15px;
+    font-size: 100%;
+}
+
+.from-submit {
+    background: #369;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 140%;
+    border-radius: 3px;
+    width: 100%;
+    padding: 10px;
+}
+
+.success-message {
+    background: green; 
+    color: antiquewhite; 
+    padding: 10px;
+    border-radius: 3px;
+    margin: 4px;
+}

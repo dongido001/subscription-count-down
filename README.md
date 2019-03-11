@@ -35,7 +35,7 @@ Then, clone this repository to your local machine:
 
 Then get your Pusher API keys from your Pusher [Dashboard](https://dashboard.pusher.com/). Once you have the keys, update the `src/environments/ebvironment.ts` file with the correct API keys:
 
-```
+```js
 export const environment = {
   production: false,
   apiUrl: 'http://localhost:3000',

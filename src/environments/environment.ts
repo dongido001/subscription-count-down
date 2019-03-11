@@ -5,8 +5,8 @@
 export const environment = {
   production: false,
   apiUrl: 'http://localhost:3000',
-  PUSHER_API_KEY: '077dd91d55f815492133',
-  PUSHER_API_CLUSTER: 'mt1'
+  PUSHER_API_KEY: '<PUSHER_API_KEY>',
+  PUSHER_API_CLUSTER: '<PUSHER_APP_CLUSTER>'
 };
 
 /*

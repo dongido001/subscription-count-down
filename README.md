@@ -1,27 +1,66 @@
-# CountDown
+# Build a realtime subscription count down with Angular and Channels
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.5.
+This is the client application for the tutorial - "how to build a realtime subscription count down with Angular and Channels". You can read the tutorial on how it was built [here](https://pusher.com/tutorials/)
 
-## Development server
+## Getting Started
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
-## Code scaffolding
+### Prerequisites
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+This tutorial uses the following:
 
-## Build
+- JavaScript
+- Angular
+- Node.js version 8.** or greater
+- Channels for realtime functionality
+- Express for the Node server
+- TypeScript
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Make sure you have [Node](https://nodejs.org/) installed on your system.
 
-## Running unit tests
+### Setting up the project
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+You need the Angular CLI to be able to run this app. Install it using the below command:
 
-## Running end-to-end tests
+```
+   npm install -g @angular/cli
+```
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+Then, clone this repository to your local machine:
 
-## Further help
+```sh
+ git clone https://github.com/dongido001/subscription-count-down-client.git
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Then get your Pusher API keys from your Pusher [Dashboard](https://dashboard.pusher.com/). Once you have the keys, update the `src/environments/ebvironment.ts` file with the correct API keys:
+
+```
+export const environment = {
+  production: false,
+  apiUrl: 'http://localhost:3000',
+  PUSHER_API_KEY: '<PUSHER_API_KEY>',
+  PUSHER_API_CLUSTER: '<PUSHER_APP_CLUSTER>'
+};
+```
+
+You are to replace <PUSHER_API_KEY> and <PUSHER_APP_CLUSTER> with your correct API keys.
+
+Next, install the dependencies:
+
+```
+npm install
+```
+
+Then finally, start up the app:
+
+```
+npm run start
+```
+
+The app should now be running on http://localhost:4200 by default
+
+## Built With
+
+* [Angular](https://angular.io/) - A platform that makes it easy to build applications with the web.
+* [Pusher](https://pusher.com/) - APIs to enable devs building realtime.

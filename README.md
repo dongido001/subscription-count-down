@@ -1,6 +1,6 @@
 # Build a realtime subscription count down with Angular and Channels
 
-This is the final application for the tutorial - "how to build a realtime subscription count down with Angular and Channels". You can read the tutorial on how it was built [here](https://pusher.com/tutorials/)
+This is the final application for the tutorial - "how to build a realtime subscription count down with Angular and Channels". You can read the tutorial on how it was built [here](https://pusher.com/tutorials/live-countdown-angular)
 
 
 ## Getting Started 
